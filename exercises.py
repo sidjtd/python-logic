@@ -184,7 +184,7 @@ pos_neg(-1)
 def name_caps(name):
     if(len(name) <= 5):
         print(name.title())
-    elif(len(name) <10):
+    elif(len(name) <=10):
         print(name.upper())
     else:
         print(name)
