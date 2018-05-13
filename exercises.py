@@ -22,9 +22,9 @@ else:
 
 #3. Declare a variable named download_speed and assign it a data value of 50. Next create a conditional statement that will check the download speed and print the following based on the condition:
 
-# <= 50 'Basic Package'
-# <=100 'Premium Package'
-# >100 'Platinum Package'
+# <= 50: 'Basic Package'
+# <=100: 'Premium Package'
+# >100: 'Platinum Package'
 
 download_speed = 50
 
@@ -106,10 +106,10 @@ even_cryptography(2)
 #Next, create a function named bandwidth which takes a parameter usage.
 #The function will sum up the list of numbers and print the following messages based on the condition:
 
-#if sum <= 50 'Light User'
-#if sum <= 100 'Moderate User'
-#if sum <=150 'Multi Media User'
-#if sum >150 'Power User'
+#if sum <= 50: 'Light User'
+#if sum <= 100: 'Moderate User'
+#if sum <=150: 'Multi Media User'
+#if sum >150: 'Power User'
 
 mbps = [3, 88, 168, 68, 2]
 
@@ -170,7 +170,27 @@ def pos_neg(num):
         print('Negative Number')
 pos_neg(-1)
 
-#13 Function leap_year
+#13 Function name_caps
+#Create a function named name_caps which takes a parameter name.
+
+#The function will check the number of characters in the name that is passed into the function and do the following:
+
+#if characters in name <=5: capitalize the first letter in the name
+#if characters in name <=10: captialize all the letters in the name
+#if characters in name >10: leave the letters as is
+
+#Print your results
+
+def name_caps(name):
+    if(len(name) <= 5):
+        print(name.title())
+    elif(len(name) <10):
+        print(name.upper())
+    else:
+        print(name)
+name_caps('winston')
+
+#14 Function leap_year
 
 #A leap year occurs every four years. Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but are leap years if they are exactly divisible by 400.
 
