@@ -41,7 +41,6 @@ else:
 def check_password(password):
     if(password == 'qwerty'):
         return True
-check_password('qwerty')
 
 password_result = check_password('qwerty')
 print(password_result)
@@ -99,4 +98,43 @@ def even_cryptography(num):
         print('Decryption Fail')
 even_cryptography(2)
 
-#9
+#9 Function bandwidth
+#Declare a variable named mbps and assign it a list of 5 number values of your choosing. 
+
+#Next, create a function named bandwidth which takes a parameter usage.
+#The function will sum up the list of numbers and print the following messages based on the condition:
+
+#if sum <= 50 'Light User'
+#if sum <= 100 'Moderate User'
+#if sum <=150 'Multi Media User'
+#if sum >150 'Power User'
+
+mbps = [3, 88, 168, 68, 2]
+
+def bandwidth(usage):
+    if(sum(usage) <= 50):
+        print('Light User') 
+    elif(sum(usage) <= 100):
+        print('Moderate User')
+    elif(sum(usage) <= 150):
+        print('Multi Media User')
+    else:
+        print('Power User')
+bandwidth(mbps)
+
+#10 Function ssh_keys
+#Create a function named ssh_keys which takes two parameters public and private.
+
+#The function will return false if public and private aren't equal and return true if they are equal.
+
+#Declare a variable named ssh_connection and print your result.
+
+def ssh_keys(public, private):
+    if(public != private):
+        return False
+    else:
+        return True
+
+ssh_connection = ssh_keys(1, 1)
+print(ssh_connection)
+
