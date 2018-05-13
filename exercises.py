@@ -32,3 +32,19 @@ elif(download_speed <= 100):
     print('Premium Package')
 else:
     print('Platinum Package')
+
+ #4 Function - check_password
+ #Create a function named check_password which will take a parameter password.
+
+ #The function will return true if the input passed into the function is equal to 'qwerty'. Declare a variable named login_result and print your result.
+
+def check_password(password):
+    if(password == 'qwerty'):
+        return True
+check_password('qwerty')
+
+login_result = check_password('qwerty')
+print(login_result)
+
+
+
