@@ -34,17 +34,69 @@ else:
     print('Platinum Package')
 
  #4 Function - check_password
- #Create a function named check_password which will take a parameter password.
+ #Create a function named check_password which takes a parameter password.
 
- #The function will return true if the input passed into the function is equal to 'qwerty'. Declare a variable named login_result and print your result.
+ #The function will return true if the password passed into the function is equal to 'qwerty'. Declare a variable named password_result and print your result.
 
 def check_password(password):
     if(password == 'qwerty'):
         return True
 check_password('qwerty')
 
-login_result = check_password('qwerty')
-print(login_result)
+password_result = check_password('qwerty')
+print(password_result)
 
+#5 Function check_login
+#Create a function named check_login which takes a parameter login.
 
+#The function will print 'Login Success' if the login passed into the function is equal to 'DevLeague' and print 'Re-enter Login' if it doesn't.
 
+def check_login(login):
+    if(login == 'DevLeague'):
+        print('Login Success')
+    else:
+        print('Re-enter Login')
+check_login('DevLeague')
+
+#6 Function malware_type
+#Create a function named malware_type which takes a parameter malware. 
+
+#The function will print the following based on the following conditions:
+#if malware is adware: 'Low Threat'
+#if malware is virus: 'Do not share files'
+#default message 'I hope you backed up your data'
+
+def malware_type(malware):
+    if(malware == 'adware'):
+        print('Low Threat')
+    elif(malware == 'virus'):
+        print('Do not share files')
+    else:
+        print('I hope you backed up your files')
+malware_type('trojan')
+
+#7 Function encryption
+#Create a function named encryption which takes a parameter keys.
+
+#The function will print 'Encryption Success' if the keys passed into function has 5 characters and print 'Encryption Fail' if it doesn't.
+
+def encryption(keys):
+    if(len(keys) == 5):
+        print('Encryption Success')
+    else:
+        print('Encryption Fail')
+encryption('abcde')
+
+#8 Function even_cryptography
+#Create a function named even_cryptography which takes a parameter num.
+
+#The function will print 'Decryption Success' if the number passed into the function is even and print 'Decryption Fail' if it isn't.
+
+def even_cryptography(num):
+    if(num%2 == 0):
+        print('Decryption Success')
+    else:
+        print('Decryption Fail')
+even_cryptography(2)
+
+#9
