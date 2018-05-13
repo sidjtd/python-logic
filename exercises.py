@@ -2,7 +2,9 @@
 
 #Conditional statements gives us the ability to check conditions and make decisions based on the condition.
 
-#In this exercise, you'll be asked to create conditional statements using if, elif and else.
+#In this assignment, you'll be asked to create conditional statements using if, elif and else. 
+
+# Please commit and push your code after each completed exercise.
 
 #1. Declare a variable named weather and assign it a string value of 'rain'. Next create a conditional statement that will check the weather and print 'Bring an umbrella' if weather equals 'rain'.
 
@@ -137,4 +139,48 @@ def ssh_keys(public, private):
 
 ssh_connection = ssh_keys(1, 1)
 print(ssh_connection)
+
+#11 Function largest_num
+#Create a function named largest_num which takes three parameters: num_1, num_2 and num_3.
+
+#The function will find the largest number among any three numbers that are passed into the function. Declare a variable named large_num_result and print your results.
+
+def largest_num(num_1, num_2, num_3):
+    if(num_1 >= num_2) and (num_1 >= num_3):
+        return num_1
+    elif(num_2 >= num_1) and (num_2 >= num_3):
+        return num_2
+    else:
+        return num_3
+
+large_num_result = largest_num(1,6,8)
+print(large_num_result)
+
+#12 Function pos_neg
+#Create a function named pos_neg which takes a parameter num.
+
+#The function will print 'Positive Number' if the number passed in is positive, print 'Zero' if the number is 0 and print 'Negative Number' for a negative number.
+
+def pos_neg(num):
+    if(num > 0):
+        print('Positive Number')
+    elif(num == 0):
+        print('Zero')
+    else:
+        print('Negative Number')
+pos_neg(-1)
+
+#13 Function leap_year
+
+#A leap year occurs every four years. Every year that is exactly divisible by four is a leap year, except for years that are exactly divisible by 100, but are leap years if they are exactly divisible by 400.
+
+#Create a function named leap_year which takes a parameter year.
+#The function will print 'The year x is a leap year.' where x is the year value that is passed into the function and print 'The year x is not a leap year.' if it isn't a leap year.
+
+def leap_year(year):
+    if(year % 4 == 0) and (year % 100 == 0) and (year % 400 == 0):
+        print('The year ' + str(year) + ' is a leap year.')
+    else:
+        print('The year ' + str(year) + ' is not a leap year.')
+leap_year(2018)
 
