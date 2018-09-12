@@ -80,15 +80,17 @@ print(check_login(login))
 #if malware is virus: 'Do not share files'
 #default message 'I hope you backed up your data'
 
-# login = 'DevLeague'
+checked = 'virus'
 
-# def check_login(log):
-#   if(log == 'DevLeague'):
-#     return 'Login Success'
-#   else:
-#     return 'Re-enter Login'
+def malware_type(malware):
+  if(malware == 'adware'):
+    return 'Low Threat'
+  elif(malware == 'virus'):
+    return 'Do not share files'
+  else:
+    return 'I hope you backed up your data'
 
-# print(check_login(login))
+print(malware_type(checked))
 
 
 #7 Function encryption
