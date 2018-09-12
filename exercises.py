@@ -1,13 +1,21 @@
-#Logic 
+#Logic
 
 #Conditional statements gives us the ability to check conditions and make decisions based on the condition.
 
-#In this assignment, you'll be asked to create conditional statements using if, elif and else. 
+#In this assignment, you'll be asked to create conditional statements using if, elif and else.
 
 # Please commit and push your code after each completed exercise.
 
 #1. Declare a variable named weather and assign it a string value of 'rain'. Next create a conditional statement that will check the weather and print 'Bring an umbrella' if weather equals 'rain'.
+weather = 'rain'
 
+def weather_checker(weather_condition):
+  if(weather_condition=='rain'):
+    return 'Bring an umbrella'
+  else:
+    return 'damn boi'
+
+print(weather_checker(weather))
 #2 Declare a variable named score and assign it a number value of 70. Next create a conditional statement that will check the score and print 'You pass!' if the score is 70 and above and print 'Study harder!' if the score is less than 70.
 
 #3. Declare a variable named download_speed and assign it a data value of 50. Next create a conditional statement that will check the download speed and print the following based on the condition:
@@ -27,7 +35,7 @@
 #The function will print 'Login Success' if the login passed into the function is equal to 'DevLeague' and print 'Re-enter Login' if it doesn't.
 
 #6 Function malware_type
-#Create a function named malware_type which takes a parameter malware. 
+#Create a function named malware_type which takes a parameter malware.
 
 #The function will print the following based on the following conditions:
 #if malware is adware: 'Low Threat'
@@ -45,7 +53,7 @@
 #The function will print 'Decryption Success' if the number passed into the function is even and print 'Decryption Fail' if it isn't.
 
 #9 Function bandwidth
-#Declare a variable named mbps and assign it a list of 5 number values of your choosing. 
+#Declare a variable named mbps and assign it a list of 5 number values of your choosing.
 
 #Next, create a function named bandwidth which takes a parameter usage.
 #The function will sum up the list of numbers and print the following messages based on the condition:
