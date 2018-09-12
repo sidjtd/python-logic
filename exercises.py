@@ -16,23 +16,61 @@ def weather_checker(weather_condition):
     return 'damn boi'
 
 print(weather_checker(weather))
+
+
 #2 Declare a variable named score and assign it a number value of 70. Next create a conditional statement that will check the score and print 'You pass!' if the score is 70 and above and print 'Study harder!' if the score is less than 70.
+score = 70
+
+def score(score):
+  if(score>=70):
+    return 'You pass!'
+  else:
+    return 'You suck'
+print(score(score))
 
 #3. Declare a variable named download_speed and assign it a data value of 50. Next create a conditional statement that will check the download speed and print the following based on the condition:
 
 # <= 50: 'Basic Package'
 # <=100: 'Premium Package'
 # >100: 'Platinum Package'
+download_speed = 101
+
+def which_package(score):
+  if score<=50:
+    return 'Basic Package'
+  elif score<=100:
+    return 'Premium Package'
+  else:
+    return 'Platinum Package'
+
+print(which_package(score))
 
  #4 Function - check_password
  #Create a function named check_password which takes a parameter password.
 
  #The function will return true if the password passed into the function is equal to 'qwerty'. Declare a variable named password_result and print your result.
 
+passw = 'qwerty'
+def password_result(pw):
+  return (pw == 'qwerty')
+
+print(password_result(passw))
+
 #5 Function check_login
 #Create a function named check_login which takes a parameter login.
 
 #The function will print 'Login Success' if the login passed into the function is equal to 'DevLeague' and print 'Re-enter Login' if it doesn't.
+
+login = 'DevLeague'
+
+def check_login(log):
+  if(log == 'DevLeague'):
+    return 'Login Success'
+  else:
+    return 'Re-enter Login'
+
+print(check_login(login))
+
 
 #6 Function malware_type
 #Create a function named malware_type which takes a parameter malware.
@@ -41,6 +79,17 @@ print(weather_checker(weather))
 #if malware is adware: 'Low Threat'
 #if malware is virus: 'Do not share files'
 #default message 'I hope you backed up your data'
+
+# login = 'DevLeague'
+
+# def check_login(log):
+#   if(log == 'DevLeague'):
+#     return 'Login Success'
+#   else:
+#     return 'Re-enter Login'
+
+# print(check_login(login))
+
 
 #7 Function encryption
 #Create a function named encryption which takes a parameter keys.
